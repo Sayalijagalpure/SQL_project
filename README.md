@@ -91,3 +91,9 @@ Demand vs salary comparison shows market gaps that analysts can target
    └── remote_skills_analysis.sql
 
 📄 README.md
+
+Tou can download all 4 datasets from here:
+https://github.com/Sayalijagalpure/SQL_project/releases/download/dataset-release/company_dim.csv
+https://github.com/Sayalijagalpure/SQL_project/releases/download/dataset-release/job_postings_fact.csv
+https://github.com/Sayalijagalpure/SQL_project/releases/download/dataset-release/skills_dim.csv
+https://github.com/Sayalijagalpure/SQL_project/releases/download/dataset-release/skills_job_dim.csv

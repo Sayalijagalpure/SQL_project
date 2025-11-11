@@ -9,7 +9,7 @@ The goal is to extract practical insights that help understand what the industry
 
 SQL Server
 
-T-SQL
+SQL Server Management Studio
 
 Aggregate functions (COUNT, AVG)
 

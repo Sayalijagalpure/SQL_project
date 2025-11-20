@@ -71,6 +71,7 @@ To find the highest-paying roles, I filtered for remote data analyst positions w
 
 Query 
 
+```sql
 SELECT TOP 10
     job_id,
     job_title,
@@ -90,6 +91,7 @@ WHERE
     AND salary_year_avg IS NOT NULL
 ORDER BY
     salary_year_avg DESC;
+```
 Summary:
 
 Salaries span a wide range, showing strong growth potential in the field.
@@ -102,7 +104,7 @@ Job titles vary significantly, indicating many specialized paths within analytic
 To understand what skills are associated with the top salaries, I joined the highest-paying job postings with their required skills. This shows which technical abilities employers value most in premium roles.
 
 Query 
-
+```sql
 WITH top_paying_jobs AS (
     SELECT TOP 10
         job_id,
@@ -135,6 +137,7 @@ INNER JOIN
     ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY
     top_paying_jobs.salary_year_avg DESC;
+```
 Summary:
 
 SQL and Python appear most frequently.
@@ -147,7 +150,7 @@ A mix of foundational and specialized skills is required.
 This query identifies which skills appear most often across remote data analyst job postings, giving a clear picture of what’s currently in highest demand.
 
 Query
-
+```sql
 SELECT TOP 5
     skills_dim.skills AS skills,
     COUNT(skills_job_dim.job_id) AS demand_count
@@ -166,6 +169,7 @@ GROUP BY
     skills_dim.skills
 ORDER BY
     demand_count DESC;
+```
 Summary:
 
 SQL and Excel remain essential core skills.
@@ -176,7 +180,7 @@ Python, Tableau, and Power BI show strong demand, emphasizing their importance i
 By averaging salaries associated with each skill, this query reveals which technical competencies tend to bring higher earning potential.
 
 Query 
-
+```sql
 SELECT 
     skills,
     ROUND(AVG(salary_year_avg), 0) AS avg_salary
@@ -192,6 +196,7 @@ GROUP BY
 ORDER BY
     avg_salary DESC
 LIMIT 25;
+```
 Summary:
 
 Big data, machine learning, and Python-based tools are among the highest-paid skills.
@@ -202,7 +207,7 @@ Knowledge of development, automation, and cloud tools significantly boosts salar
 This query combines demand and salary to highlight skills that offer both strong hiring potential and high compensation — ideal targets for learning and career growth.
 
 Query
-
+```sql
 WITH skills_demand AS (
     SELECT
         s.skill_id,
@@ -258,7 +263,7 @@ WHERE
 ORDER BY
     a.avg_salary DESC,
     sd.demand_count DESC;
-
+```
 
 
 ## Approach / Methodology

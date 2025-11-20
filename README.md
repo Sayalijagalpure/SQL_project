@@ -6,11 +6,15 @@ It focuses on understanding skill demand, salary trends, remote job availability
 The goal is to extract practical insights that help understand what the industry currently values.
 
 ### The questions I wanted to answer through my SQL queries were:
-What are the top-paying data analyst jobs?
-What skills are required for these top-paying jobs?
-What skills are most in demand for data analysts?
-Which skills are associated with higher salaries?
-What are the most optimal skills to learn?
+1. What are the top-paying data analyst jobs?
+
+2. What skills are required for these top-paying jobs?
+
+3. What skills are most in demand for data analysts?
+
+4. Which skills are associated with higher salaries?
+
+5. What are the most optimal skills to learn?
 
 ## Tools and Technologies Used
 

@@ -1,11 +1,11 @@
 # 📊 Data Analyst Job Market – SQL Project
-## ✅ Purpose of the Project
+## Purpose of the Project
 
 The project aims to analyze the Data Analyst job market using SQL.
 It focuses on understanding skill demand, salary trends, remote job availability, and how different skills influence pay.
 The goal is to extract practical insights that help understand what the industry currently values.
 
-## ✅ Tools and Technologies Used
+## Tools and Technologies Used
 
 SQL Server
 
@@ -19,7 +19,7 @@ Grouping, ordering, filtering
 
 Relational data analysis concepts
 
-## ✅ Dataset Description
+## Dataset Description
 
 The project uses four related tables:
 
@@ -52,7 +52,7 @@ company names
 
 These four tables together help analyze skills ↔ jobs ↔ companies ↔ salaries.
 
-## ✅ Approach / Methodology
+## Approach / Methodology
 
 Performed INNER JOINs across all required tables
 
@@ -68,7 +68,7 @@ Ranked results to identify top skills and trends
 
 Created individual SQL files for each analysis
 
-## ✅ Insights & Findings
+## Insights & Findings
 
 The most common skills aren’t always the highest paying
 
@@ -82,7 +82,7 @@ Companies hiring remote analysts focus on software-centric tools
 
 Demand vs salary comparison shows market gaps that analysts can target
 
-## ✅ Project Structure
+## Project Structure
 📁 sql-queries/
    ├── skill_demand.sql
    ├── top_paying_skills.sql
